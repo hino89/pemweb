@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kritik  &  Saran</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            width: 25rem;
+            display: flex;
+            flex-direction: column;
+        }
+        label {
+            margin-top: 0px;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            margin-bottom: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            margin-top: 15px;
+            padding: 10px;
+            background: #007bff;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #0056b3;
+        }
+        .back-link {
+            text-align: center;
+            margin-top: 15px;
+            margin-bottom: 2rem;
+        }
+    </style>
+</head>
+<body style="margin: 0; font-family: 'Inter';">
+    <div class="container">
+        <p style="font-size: 2rem;">Kritik & Saran</p>
+        <form action="#" method="post">
+            <label for="nama">Nama:</label>
+            <input type="text" id="nama" name="nama" required>
+            
+            <label for="npm">NPM:</label>
+            <input type="text" id="npm" name="npm" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="kritik">Kritik:</label>
+            <textarea id="kritik" name="kritik" rows="3" required></textarea>
+            
+            <label for="saran">Saran:</label>
+            <textarea id="saran" name="saran" rows="3" required></textarea>
+            
+            <button type="submit">Kirim</button>
+        </form>
+        <div class="back-link">
+            <a href="index.html">Kembali ke Halaman Utama</a>
+        </div>
+    </div>
+</body>
+</html>
